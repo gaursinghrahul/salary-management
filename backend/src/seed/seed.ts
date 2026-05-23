@@ -119,7 +119,7 @@ function pick<T>(arr: T[]): T {
 // ── Name loading ──────────────────────────────────────────────────────────────
 
 function loadNames(filename: string): string[] {
-  const filePath = path.resolve(__dirname, '../../../../data', filename);
+  const filePath = path.resolve(__dirname, '../../../data', filename);
   return fs
     .readFileSync(filePath, 'utf-8')
     .split('\n')
