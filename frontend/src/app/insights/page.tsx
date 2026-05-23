@@ -198,7 +198,7 @@ export default function InsightsPage() {
                 tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`}
                 tick={{ fontSize: 11 }}
               />
-              <Tooltip formatter={(v: number) => formatCurrency(v)} />
+              <Tooltip formatter={(v) => formatCurrency(Number(v))} />
               <Bar
                 dataKey="avg"
                 fill="#6366f1"
